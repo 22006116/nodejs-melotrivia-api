@@ -2,7 +2,7 @@ import {pool} from '../db.js';
 
 export const getPreguntas = async (req, res) => {
     try {
-        throw new Error('DB Error');
+       
         const [rows] = await pool.query('SELECT * FROM pregunta');
         res.send(rows);
     } catch (err) {
