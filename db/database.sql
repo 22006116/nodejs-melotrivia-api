@@ -27,9 +27,9 @@ INSERT INTO `preguntas` VALUES (1,'¿Primera banda famosa de Charly García?','S
 (12,'¿Qué banda lanzó la canción “Stairway to Heaven”?','Led Zepelín','Los Beatles','AC / DC','Pink Floyd'),
 (13,'¿Qué banda escribió el álbum “The Wall”?','Pink Floyd','Los Beatles','AC / DC','Led Zepelín'),
 (14,'¿Quién fue el cantante principal de Queen?','Fredy Mercury','Brian May','Roger Waters','Paul McCartney'),
-(15,'¿Qué banda escribió el álbum “The Wall”?','Pink Floyd','Los Beatles','AC / DC','Led Zepelín'),
-(16,'¿Qué banda escribió el álbum “The Wall”?','Pink Floyd','Los Beatles','AC / DC','Led Zepelín'),
-(17,'¿Qué banda escribió el álbum “The Wall”?','Pink Floyd','Los Beatles','AC / DC','Led Zepelín'),
-(18,'¿Qué banda escribió el álbum “The Wall”?','Pink Floyd','Los Beatles','AC / DC','Led Zepelín'),
-(19,'¿Qué banda escribió el álbum “The Wall”?','Pink Floyd','Los Beatles','AC / DC','Led Zepelín'),
-(20,'¿Qué banda escribió el álbum “The Wall”?','Pink Floyd','Los Beatles','AC / DC','Led Zepelín');
+(15,'¿Qué banda tuvo éxito con la canción “Hotel California”?','Las Águilas','Los Rolling Stones','Fleetwood Mac','Dire Straits'),
+(16,'¿“Born to Run” es una canción icónica de qué artista?','Bruce Springsteen','Bob Dylan','Eric Clapton','Neil Young'),
+(17,'¿Quién es conocido por tocar la guitarra con los dientes durante las presentaciones en vivo?','Jimi Hendrix','Keith Richards','Slash','Jimmy Page'),
+(18,'¿Qué banda de rock se conocía originalmente como “On a Friday”?','Radiohead','The Cure','U2','R. E. M.'),
+(19,'¿Qué álbum de los Beatles incluye la canción “Lucy in the Sky with Diamonds”?','Sgt. Pepper’s Lonely Hearts Club Band','The White Album','Rubber Soul','Abbey Road'),
+(20,'¿De qué banda es la canción “November Rain”?','Guns N Roses','Aerosmith','Metallica','Bon Jovi');
