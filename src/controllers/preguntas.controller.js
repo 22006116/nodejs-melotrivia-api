@@ -31,8 +31,7 @@ export const getPregunta = async (req, res) => {
 export const crearPreguntas = async (req, res) => {
     try {
         const {pregunta, respuesta_Corecta, respuesta_1, respuesta_2, respuesta_3} = req.body;
-        const [rows] = await pool.query('INSERT INTO pregunta (pregunta, respuesta_Corecta, respuesta_1, respuesta_2, respuesta_3 ) VALUES (?, ?, ?, ?, ?)', 
-        [pregunta, respuesta_Corecta, respuesta_1, respuesta_2, respuesta_3 ]);   
+        const [rows] = await pool.query('INSERT INTO pregunta (pregunta, respuesta_Corecta, respuesta_1, respuesta_2, respuesta_3 ) VALUES (?, ?, ?, ?, ?)', [pregunta, respuesta_Corecta, respuesta_1, respuesta_2, respuesta_3 ]);   
         res.send({
             id: rows.insertId,
             pregunta, 
@@ -53,7 +52,7 @@ export const actualizarPreguntas = async (req, res) => {
         const {id} = req.params;
         const {pregunta, respuesta_Corecta, respuesta_1, respuesta_2, respuesta_3} = req.body;
         
-        const [result] = await pool.query('UPDATE pregunta SET pregunta = IFNULL(?, pregunta), respuesta_Corecta = IFNULL(?, respuesta_Corecta), respuesta_1 = IFNULL(?, respuesta_1), respuesta_2 = IFNULL(?, respuesta_2), respuesta_3 = IFNULL(?, respuesta_3) WHERE  id = ?', [pregunta, respuesta_Clorecta, respuesta_1, respuesta_2, respuesta_3, id]);
+        const [result] = await pool.query('UPDATE pregunta SET pregunta = IFNULL(?, pregunta), respuesta_Corecta = IFNULL(?, respuesta_Corecta), respuesta_1 = IFNULL(?, respuesta_1), respuesta_2 = IFNULL(?, respuesta_2), respuesta_3 = IFNULL(?, respuesta_3) WHERE  id = ?', [pregunta, respuesta_Corecta, respuesta_1, respuesta_2, respuesta_3, id]);
         console.log(result);
 
         if (result.affectedRows === 0) return  res.status(404).json({
